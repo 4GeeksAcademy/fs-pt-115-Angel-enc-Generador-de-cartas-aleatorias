@@ -1,5 +1,26 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-body{
-    background: white;
+body {
+    background: rgb(5, 180, 49);
 }
+
+h1 {
+    font-size: 100px;
+    margin-bottom: 0;
+}
+
+.carta {
+    width: 150px;
+    height: 220px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.palo {
+    font-size: 2rem;
+}
+
+#valor {
+    font-size: 3rem;
+}
+
