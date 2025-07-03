@@ -41,8 +41,18 @@ window.onload = function () {
   // Generar carta cada 10 segundos.
   setInterval(newCard, 10000);
 
+function nuevoTamaño() {
+  const widthInput = document.getElementById("widthInput");
+  const heightInput = document.getElementById("heightInput");
+  const cardSize = document.getElementById("cardSize");
 
-  
+  const valorWidth = parseInt(widthInput.value);
+  const valorHeight = parseInt(heightInput.value);
+
+  cardSize.style.width = valorWidth + 'px';
+  cardSize.style.height = valorHeight + 'px';
+}
+  document.getElementById("tamañoBtn").addEventListener("click", nuevoTamaño);
   newCard();
   //6.Genera la carta al pulsar el boton(.addEventListener()=>escucha el "click")
   document.getElementById("newCardBtn").addEventListener("click", newCard);
